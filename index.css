@@ -1,0 +1,46 @@
+html, body {
+  /* 余白をなくす */
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  /* Webkitによる勝手な描画を防ぐ */
+  -webkit-appearance: none;
+}
+
+.container {
+  /* 上下左右中央寄せ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* 縦並び */
+  /* 画面の高さ、幅に合わせる */
+  height: 100vh;
+  width: 100vw;
+}
+
+.good {
+  border: none; /* ボーダーをなくす */
+  width: 72px;
+  height: 72px;
+  border-radius: 100vh; /* 円 */
+  outline: none; /* クリックしたときのアウトラインをなくす */
+  background-color: #f64725;
+  color: #ffffff; /* グッドの色を白くする */
+  transition: 0.2s;
+}
+
+.good:hover { /* カーソルが乗った */
+  background-color: #ee3c19;
+}
+
+.good:active { /* クリックしてる */
+  background-color: #dd3615;
+}
+
+.good-number {
+  font-size: 1.15rem;
+  color: #5d5e5f;
+  margin-top: 8px
+}
